@@ -1,0 +1,24 @@
+<div class="jumbo">
+  <div class="right tomster"></div>
+  <h2>USERS</h2>
+  <p>
+    This is where you will hopefully be able to see some of your user object
+  </p>
+</div>
+
+
+{{#each model as |user|}}
+  <article class="id">
+    <h3>{{user.id}}</h3>
+    <div class="fullname">
+      <span>Full Name:</span> {{user.fullname}}
+    </div>
+    <div class="favorite_color">
+      <span>Favorite Color:</span> {{user.favorite_color}}
+    </div>
+    <div class="email">
+      <span>Email:</span> {{user.email}}
+    </div>
+  </article>
+{{/each}}
+<!-- {{outlet}} -->
